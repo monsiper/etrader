@@ -1,10 +1,12 @@
 import { Component }      from '@angular/core';
+import { Http, Headers } from '@angular/http';
+import { LoginPage } from './login.component';
+import { AuthService } from '../services/auth.service';
 
-import { LoginPage } from './pages/homepage/homepage.component';
 @Component({
     selector: 'my-app',
-    templateUrl: './app/app.template.html',
-    styleUrls: ['./app/pages/homepage/homepage.styles.css']
+    templateUrl: './app/templates/app.template.html',
+    providers: [AuthService]
 })
 export class ETrader { 
 
@@ -18,6 +20,10 @@ export class ETrader {
   private dashboard = false;
   private profile = true;
   private trade = false;
+	private user = {
+    user_name: "",
+    password: "",
+  }
 
   activate(i) {
     console.log(i);
@@ -46,8 +52,9 @@ export class ETrader {
     }
   }
 
-  onAuthenticated(value) {
-    console.log("true");
+  onAuthenticated(user) {
+    this.user = user;
+    console.log(user);
     this.isAuthenticated = true;
   }
 }

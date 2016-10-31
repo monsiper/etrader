@@ -98,3 +98,5 @@ frontend/node_modules
 *.js
 
 *.map
+
+*.swp
