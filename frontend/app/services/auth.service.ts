@@ -13,4 +13,10 @@ export class AuthService {
 						.map(response => response.json()); 
   }
 
+  register(user) {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+    return this.http.post('http://localhost:8000/register', user, { headers: headers })
+						.map(response => response.json()); 
+  }
 }

@@ -1,5 +1,9 @@
 <div class="row">
-  <div class="col-md-6">
+
+  <div class="col-md-4">
+    <h1> 
+      Social
+    </h1>
     <a 
       class="twitter-timeline"
       href="https://twitter.com/hashtag/ethereum" 
@@ -7,11 +11,24 @@
       #ethereum Tweets
     </a> 
   </div>
-  <div class="col-md-6">
+
+  <div class="col-md-4">
     <h1> 
-      Price 
+      Current Market Prices
+    </h1>
+    <ul class="list-group">
+    <div *ngFor='let key of arrayOfKeys'>
+      <li class="list-group-item"> {{key}}: {{prices[key]}} </li>
+    </div>
+    </ul>
+  </div>
+
+  <div class="col-md-4">
+    <h1>
+      quotes
     </h1>
   </div>
+
 </div>
 
 

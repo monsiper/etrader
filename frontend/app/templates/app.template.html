@@ -1,20 +1,22 @@
-
-
 <div [ngSwitch]="isAuthenticated">
+
   <div *ngSwitchCase="true">
-    <div class="page-header" >
+    <div class="page-header">
       <div class="row">
-				<h1 class="col-md-8">
+				<h1 class="col-sm-8">
 					eTrader 
 					<small>
 					Ethereum trading platform and dashboard 
 					</small>
 				</h1>
-        <div class="col-md-4">
-					<ul class="list-unstyled">
-            <li> {{ user['user_name'] }} </li>
-            <li> <button class="btn btn-danger"> Sign Out </button> </li>
-          </ul>
+
+        <div class="pull-right" style="margin-right: 20px">
+          <div>
+            {{user.user_name}} 
+          </div>
+          <div>
+            <button class="btn btn-danger" (click)='signOut()'> Sign Out </button>
+          </div>
         </div>
       </div>
     </div>
@@ -27,18 +29,18 @@
 
     <dashboard *ngIf="dashboard"></dashboard>
   </div>
-
   
   <div *ngSwitchDefault>
    <div class="page-header" >
-      <h1 style="margin-left: 40px;">
+      <div class="row">
+      <h1 class="col-sm-8">
           eTrader 
           <small>
           Ethereum trading platform and dashboard 
           </small>
       </h1>
+      </div>
     </div>
     <login (onAuthenticated)="onAuthenticated($event)"></login> 
   </div>
-
 </div>

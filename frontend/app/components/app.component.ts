@@ -6,6 +6,7 @@ import { AuthService } from '../services/auth.service';
 @Component({
     selector: 'my-app',
     templateUrl: './app/templates/app.template.html',
+    styleUrls: ['./app/styles/app.styles.css'],
     providers: [AuthService]
 })
 export class ETrader { 
@@ -54,8 +55,12 @@ export class ETrader {
 
   onAuthenticated(user) {
     this.user = user;
-    console.log(user);
     this.isAuthenticated = true;
+  }
+
+  signOut() {
+    this.user = null;
+    this.isAuthenticated = false;
   }
 }
 
