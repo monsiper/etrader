@@ -1,0 +1,43 @@
+
+
+<div [ngSwitch]="isAuthenticated">
+  <div *ngSwitchCase="true">
+    <div class="page-header" >
+      <h1 style="margin-left: 40px;">
+        eTrader 
+        <small>
+        Ethereum trading platform and dashboard 
+        </small>
+      </h1>
+    </div>
+
+    <ul class="nav nav-tabs nav-justified">
+     <li role="presentation" [ngClass]="{'active': dashboard}"><a (click)="activate(1)">Dashboard</a></li>
+     <li role="presentation" [ngClass]="{'active': profile}"><a (click)="activate(2)">Profile</a></li>
+     <li role="presentation" [ngClass]="{'active': trade}"><a (click)="activate(3)">Trade</a></li>
+    </ul>
+  </div>
+
+  
+  <div *ngSwitchDefault>
+   <div class="page-header" >
+      <h1 style="margin-left: 40px;">
+          eTrader 
+          <small>
+          Ethereum trading platform and dashboard 
+          </small>
+      </h1>
+    </div>
+    <login (onAuthenticated)="onAuthenticated($event)"></login> 
+  </div>
+
+</div>
+
+<!--
+
+
+
+
+
+
+-->
