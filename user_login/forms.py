@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
 
@@ -11,24 +12,31 @@ class SignupForm(forms.Form):
     #def clean_email():
     #def clean_first_name():
 
+    def clean_email(self):
+        return self.cleaned_data['email'].lower().strip()
+
     def clean(self):
         super(SignupForm, self).clean()
-        data = self.cleaned_data['email']
-        if User.objects.filter(email__iexact=data).exists():
-            raise forms.ValidationError('This username already exists in the platform')
+        if 'email' in self.cleaned_data:
+            email_data = self.cleaned_data['email']
+            if User.objects.get(username=email_data).exists():
+                raise forms.ValidationError('A user with the same email address already exists in the platform')
 
 
 class LoginForm(forms.Form):
-    user_name = forms.EmailField(required=True)
+    email = forms.EmailField(required=True)
     password = forms.CharField(widget=forms.PasswordInput, required=True)
 
     def clean(self):
-        super(SignupForm, self).clean()
-        user_name_data = self.cleaned_data['user_name']
-        password_data = self.cleaned_data['password']
+        super(LoginForm, self).clean()
 
-        if not User.objects.filter(email__iexact=user_name_data).exists() or \
-                User.objects.get(email__iexact=user_name_data).password != password_data :
-            raise forms.ValidationError('Make sure you entered the correct email address/password')
+        if 'email' in self.cleaned_data and 'password' in self.cleaned_data:
 
+            email_data = self.cleaned_data['email']
+            password_data = self.cleaned_data['password']
+            user = authenticate(username=email_data, password=password_data)
 
+            if user is None:
+                raise forms.ValidationError("We could not authenticate")
+            else:
+                self.cleaned_user = user
