@@ -9,7 +9,7 @@ export class LoginPage {
   @Output() onAuthenticated = new EventEmitter<Object>();
 
   private user = {
-    user_name: "",
+    email: "",
     password: "",
   }
 
@@ -17,11 +17,11 @@ export class LoginPage {
 
   login() {
    
-   this.onAuthenticated.emit(this.user);
-   // 
-   // this.authService.login(this.user).subscribe(
-   //     () => this.onAuthenticated.emit(true)
-   // );
+   //this.onAuthenticated.emit(this.user);
+
+    this.authService.login(this.user).subscribe(
+        () => this.onAuthenticated.emit(true)
+    );
   }
 
 

@@ -1,0 +1,48 @@
+{% extends "main_page.html" %}
+{% load crispy_forms_tags %}
+{% load bootstrap3 %}
+
+{% block content %}
+
+{% if request.path != '/signup/' %}
+<div class="intro-header">
+</div>
+
+{% endif %}
+<div class="container form-container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="panel panel-login">
+				<div class="panel-heading">
+					<div class="row">
+
+						<div class="col-xs-6 col-xs-offset-3">
+							<h2 style="color:green" class="active">{{ header }} </h2>
+						</div>
+
+					</div>
+					<hr>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-12">
+							<form method="post" role="form" style="display: block;">
+								{% csrf_token %}
+
+
+								{% bootstrap_form form %}
+								{% buttons %}
+								<button type="submit" class="btn btn-primary">
+									Submit
+								</button>
+								{% endbuttons %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock content %}

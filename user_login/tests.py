@@ -1,3 +1,5 @@
+from django.contrib.auth.models import User
+from django.core.urlresolvers import reverse
 from django.test import TestCase
 from views import login_user
 
@@ -8,23 +10,37 @@ from views import login_user
 # class MyTest(
 
 # pytest
+from django.test import Client
+
+class TestLogin(TestCase):
+
+    def test_login_view_fails(self):
+
+
+        c = Client()
+
+        response = c.post('/login/', {'email': 'john@adams.com', 'password': 'smith'})
+        # from ipdb import set_trace
+        # print response.content
+        self.assertTrue("could not authenticate" in response.content)
+        self.assertTrue(response.status_code == 200)
+
+    def test_login_view_succeeds(self):
+        c = Client()
+        User.objects.create_user(username='john@adams.com', email='john@adams.com', password='smith')
+
+        u = User.objects.first()
+        u.set_password('smith')
+        u.save()
+
+        self.assertEqual(User.objects.count(), 1)
+        self.assertEqual(User.objects.filter(email='john@adams.com').count(), 1)
+        response = c.post('/login/', {'email': 'john@adams.com', 'password': 'smith'})
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.url, reverse('usermenu'))
 
 
 
-def test_login_view():
+# Liste: son kullanici neler yapacak? Bunlari teste donustur.
 
-    User.objects.creat()
-
-
-    # now test
-    test_request = request(type='GET')
-    login_user(test_request)
-    assert 3 == 2 + 1
-
-
-
-
-if __name__ == "__main__":
-    test_login_view()
-    test_foo()
 

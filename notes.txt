@@ -1,0 +1,7 @@
+1. cors:
+
+pip install django-cors-headers
+
+https://github.com/ottoyiu/django-cors-headers
+
+

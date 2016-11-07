@@ -3,11 +3,19 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
 
+
 class SignupForm(forms.Form):
-    first_name = forms.CharField(max_length=30, label='First Name', required=True)
-    last_name = forms.CharField(max_length=30, label='Last Name',required=True)
-    email = forms.EmailField(label='Email Address',required=True)
-    password = forms.CharField(label='Password', widget=forms.PasswordInput,required=True)
+    first_name = forms.CharField(max_length=30,
+                                 label='First Name',
+                                 required=True)
+    last_name = forms.CharField(max_length=30,
+                                label='Last Name',
+                                required=True)
+    email = forms.EmailField(label='Email',
+                             required=True)
+    password = forms.CharField(label='Password',
+                               widget=forms.PasswordInput,
+                               required=True)
 
     #def clean_email():
     #def clean_first_name():
@@ -19,13 +27,16 @@ class SignupForm(forms.Form):
         super(SignupForm, self).clean()
         if 'email' in self.cleaned_data:
             email_data = self.cleaned_data['email']
-            if User.objects.get(username=email_data).exists():
+            if User.objects.filter(username=email_data).exists():
                 raise forms.ValidationError('A user with the same email address already exists in the platform')
 
 
 class LoginForm(forms.Form):
-    email = forms.EmailField(required=True)
-    password = forms.CharField(widget=forms.PasswordInput, required=True)
+    email = forms.EmailField(required=True,
+                             label='Email')
+    password = forms.CharField(widget=forms.PasswordInput,
+                               required=True,
+                               label='Password')
 
     def clean(self):
         super(LoginForm, self).clean()
@@ -40,3 +51,4 @@ class LoginForm(forms.Form):
                 raise forms.ValidationError("We could not authenticate")
             else:
                 self.cleaned_user = user
+

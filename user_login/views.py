@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
@@ -12,16 +13,18 @@ def login_user(request):
         processed_data = LoginForm(request.POST)
         if processed_data.is_valid():
             login(request, processed_data.cleaned_user)
-            return redirect('/')
+            return redirect(reverse('usermenu'))
         else:
-            return render(request, "user_login/login.html", {'form': processed_data})
+            return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': processed_data})
     else:
         empty_Form = LoginForm()
-        return render(request, "user_login/login.html", {'form': empty_Form})
+        return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form})
+
+
 
 #user signup view
 def signup_user(request):
-
+    # if uer is logged in , rediret to dashboard
     if request.method == 'POST':
         processed_data = SignupForm(request.POST)
         if processed_data.is_valid():
@@ -31,14 +34,20 @@ def signup_user(request):
             password = processed_data.cleaned_data['password']
             User.objects.create_user(first_name=first_name, last_name=last_name,
                                      username=email, email=email, password=password)
-            user = authenticate(email=email)
+            user = authenticate(username=email, password=password)
             login(request, user)
-            return redirect('/')
+            return redirect(reverse('usermenu'))
         else:
-            return render(request, "user_login/signup.html", {'form': processed_data})
+            return render(request, "user_login/login_or_signup.html", {'header': 'Register', 'form': processed_data})
     else:
         empty_Form = SignupForm()
-        return render(request,"user_login/signup.html", {'form': empty_Form})
+        return render(request,"user_login/login_or_signup.html", {'header': 'Register', 'form': empty_Form})
+
+def logout_user(request):
+    logout(request)
+    return redirect(reverse('main_page'))
+
+    pass
 
 
 def main_page(request):
