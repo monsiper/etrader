@@ -1,4 +1,5 @@
 from django.core.urlresolvers import reverse
+from django.db import transaction
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
@@ -23,6 +24,7 @@ def login_user(request):
 
 
 #user signup view
+
 def signup_user(request):
     # if uer is logged in , rediret to dashboard
     if request.method == 'POST':
@@ -32,8 +34,11 @@ def signup_user(request):
             last_name = processed_data.cleaned_data['last_name']
             email = processed_data.cleaned_data['email']
             password = processed_data.cleaned_data['password']
-            User.objects.create_user(first_name=first_name, last_name=last_name,
-                                     username=email, email=email, password=password)
+
+            with transaction.atomic():
+                User.objects.create_user(first_name=first_name, last_name=last_name,
+                                         username=email, email=email, password=password)
+
             user = authenticate(username=email, password=password)
             login(request, user)
             return redirect(reverse('usermenu'))

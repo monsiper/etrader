@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'user_login.apps.UserLoginConfig',
+    'trade.apps.TradeConfig',
     'main.apps.MainConfig',
     'django_extensions',
     'crispy_forms',
