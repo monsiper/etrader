@@ -2,8 +2,6 @@ from django import forms
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
-
-
 class SignupForm(forms.Form):
     first_name = forms.CharField(max_length=30,
                                  label='First Name',
@@ -19,7 +17,6 @@ class SignupForm(forms.Form):
 
     #def clean_email():
     #def clean_first_name():
-
     def clean_email(self):
         return self.cleaned_data['email'].lower().strip()
 
@@ -42,7 +39,6 @@ class LoginForm(forms.Form):
         super(LoginForm, self).clean()
 
         if 'email' in self.cleaned_data and 'password' in self.cleaned_data:
-
             email_data = self.cleaned_data['email']
             password_data = self.cleaned_data['password']
             user = authenticate(username=email_data, password=password_data)

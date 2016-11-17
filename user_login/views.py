@@ -2,7 +2,7 @@ from django.core.urlresolvers import reverse
 from django.db import transaction
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from forms import LoginForm, SignupForm
 
@@ -14,7 +14,7 @@ def login_user(request):
         processed_data = LoginForm(request.POST)
         if processed_data.is_valid():
             login(request, processed_data.cleaned_user)
-            return redirect(reverse('usermenu'))
+            return redirect(reverse('dashboard'))
         else:
             return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': processed_data})
     else:
@@ -41,26 +41,24 @@ def signup_user(request):
 
             user = authenticate(username=email, password=password)
             login(request, user)
-            return redirect(reverse('usermenu'))
+            return redirect(reverse('dashboard'))
         else:
-            return render(request, "user_login/login_or_signup.html", {'header': 'Register', 'form': processed_data})
+            return render(request, "user_login/login_or_signup.html", {'header': 'Sign Up', 'form': processed_data})
     else:
         empty_Form = SignupForm()
-        return render(request,"user_login/login_or_signup.html", {'header': 'Register', 'form': empty_Form})
+        return render(request,"user_login/login_or_signup.html", {'header': 'Sign Up', 'form': empty_Form})
 
 def logout_user(request):
     logout(request)
     return redirect(reverse('main_page'))
 
-    pass
 
-
-def main_page(request):
-
-    if request.user.is_authenticated():
-        return render(request,"user_login/main.html")
-        # do something for logged in user
-    else:
-        pass
-        # do something for logged out user
-    return HttpResponse("OK")
+# def main_page(request):
+#
+#     if request.user.is_authenticated():
+#         return render(request,"user_login/main.html")
+#         # do something for logged in user
+#     else:
+#         pass
+#         # do something for logged out user
+#     return HttpResponse("OK")

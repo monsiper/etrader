@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('user_login.urls')),
     url(r'^', include('main.urls')),
+    url(r'^panel/trade/', include('trade.urls'))
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 

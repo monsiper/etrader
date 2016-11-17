@@ -13,15 +13,17 @@
     <title>eTrader- Ethereum Trading</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{% static "startbootstrap-landing-page/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "landing-page/css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{% static "startbootstrap-landing-page/css/landing-page.css" %}" rel="stylesheet">
-    <link href="{% static "startbootstrap-landing-page/css/custom-form.css" %}" rel="stylesheet">
+    <link href="{% static "landing-page/css/landing-page.css" %}" rel="stylesheet">
+    <link href="{% static "landing-page/css/custom-form.css" %}" rel="stylesheet">
+    <link href="{% static "landing-page/css/custom-panel.css" %}" rel="stylesheet">
+
 
 
     <!-- Custom Fonts -->
-    <link href="{% static "startbootstrap-landing-page/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "landing-page/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,7 +59,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                       {% if request.user.is_authenticated %}
-                    <li><a>Hello {{ request.user.first_name }}</a></li>
+                    <li><a>{{ request.user.first_name }}</a></li>
              <li>
                         <a href="{% url 'logout' %}">Logout</a>
                     </li>
@@ -235,13 +237,27 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 {% endblock content %}
+
+<!-- jQuery -->
+    <script src="{% static 'landing-page/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'landing-page/js/bootstrap.min.js' %}"></script>
+
+ <script src="{% static 'main/main.js' %}"></script>
+
+
+
+
+
+{% if 1 %}
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+{% endif %}
 
 </body>
 
