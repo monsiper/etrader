@@ -16,7 +16,8 @@ def login_user(request):
             login(request, processed_data.cleaned_user)
             return redirect(reverse('dashboard'))
         else:
-            return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': processed_data})
+            return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': processed_data},
+                          status=401)
     else:
         empty_Form = LoginForm()
         return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form})
@@ -43,7 +44,8 @@ def signup_user(request):
             login(request, user)
             return redirect(reverse('dashboard'))
         else:
-            return render(request, "user_login/login_or_signup.html", {'header': 'Sign Up', 'form': processed_data})
+            return render(request, "user_login/login_or_signup.html", {'header': 'Sign Up', 'form': processed_data},
+                          status=400)
     else:
         empty_Form = SignupForm()
         return render(request,"user_login/login_or_signup.html", {'header': 'Sign Up', 'form': empty_Form})

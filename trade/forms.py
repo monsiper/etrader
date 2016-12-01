@@ -14,9 +14,6 @@ class TradeForm(forms.Form):
                                 decimal_places=2,
                                 label='Amount')
 
-
-    #def clean_email():
-    #def clean_first_name():
     def clean(self):
         super(TradeForm, self).clean()
         if 'num_of_coins' in self.cleaned_data:

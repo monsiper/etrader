@@ -1,6 +1,7 @@
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 from django import forms
+from user_login.forms import LoginForm
 # Create your views here.
 from trade.forms import TradeForm
 from trade.get_price import get_current_ETH_price
@@ -18,7 +19,8 @@ def main_page(request):
 
 def user_panel(request, type='dashboard'):
     if not request.user.is_authenticated():
-        return redirect(reverse('login'))
+        empty_Form = LoginForm()
+        return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form}, status=403)
 
     return render(request, 'user_panel.html', {'parent_page': type})
 

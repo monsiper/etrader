@@ -7,6 +7,8 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 import decimal,logging
 from get_price import get_current_ETH_price
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 # Create your models here.
 
 
@@ -47,9 +49,11 @@ class Account(models.Model):
 
     def is_daily_limit_exceeded(self, order):
 
+        start_date = datetime.today()
+
         if order.type == 'Buy':
             list_of_orders = Order.objects.filter(user=self.user, order_status='Success',
-                                                  type='Buy').values_list('amount',flat=True)
+                                                  type='Buy', last_updated_at__date=start_date).values_list('amount',flat=True)
 
             if sum(list_of_orders)+order.amount > self.buy_limit:
                 return True
@@ -58,7 +62,7 @@ class Account(models.Model):
 
         else:
             list_of_orders = Order.objects.filter(user=self.user, order_status='Success',
-                                                  type='Sell').values_list('amount',flat=True)
+                                                  type='Sell', last_updated_at__date=start_date).values_list('amount',flat=True)
 
             if sum(list_of_orders)+order.amount > self.sell_limit:
                 return True
@@ -89,6 +93,33 @@ class OrderManager(models.Manager):
 
         if user.account.is_active:
             return self.create(user=user, type=type, amount=decimal.Decimal(amount))
+        else:
+            return None
+
+    def get_past_orders_for_user(self, user, status, timeframe):
+
+        if timeframe == 'WEEK':
+            start_date = datetime.today() + relativedelta(days=-7)
+        elif timeframe == 'MONTH':
+            start_date = datetime.today() + relativedelta(month=-1)
+        elif timeframe == 'YEAR':
+            start_date = datetime.today() + relativedelta(year=-1)
+        else:
+            return None
+
+        if status == 'All':
+            list_of_orders = Order.objects.filter(user=user, order_status__in=['Success','Fail'],
+                                              last_updated_at__date__gte=start_date).\
+                                            order_by('last_updated_at').values('type','amount','order_status')
+        elif status == 'Success' or status == 'Fail':
+            list_of_orders = Order.objects.filter(user=user, order_status=status,
+                                              last_updated_at__date__gte=start_date).\
+                                            order_by('last_updated_at').values('type','amount','order_status')
+        else:
+            return None
+
+        if list_of_orders:
+            return list_of_orders
         else:
             return None
 

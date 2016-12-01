@@ -41,7 +41,7 @@ class TestLogin(TestCase):
         # from ipdb import set_trace
         # print response.content
         self.assertTrue("could not authenticate" in response.content)
-        self.assertTrue(response.status_code == 200)
+        self.assertEqual(response.status_code, 401)
 
     def test_login_view_succeeds(self):
         c = Client()
