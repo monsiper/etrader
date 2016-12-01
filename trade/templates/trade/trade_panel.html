@@ -13,7 +13,7 @@
 
             <li role="presentation" {% if page == 'buy' %} class="active"{%endif %}><a href="{% url 'display_buy' %}">Buy</a></li>
             <li role="presentation" {% if page == 'sell' %} class="active"{%endif %}><a href="{% url 'display_sell' %}">Sell</a></li>
-            <li role="presentation" {% if page == 'order_history' %} class="active"{%endif %}><a href="#order_history" aria-controls="messages" role="tab" data-toggle="tab">Order
+            <li role="presentation" {% if page == 'order_history' %} class="active"{%endif %}><a href="{% url 'display_order_history' %}">Order
                 History</a></li>
             <li role="presentation" {% if page == 'account_transfer' %} class="active"{%endif %}><a href="#account_transfer" aria-controls="settings" role="tab" data-toggle="tab">Account
                 Transfer</a></li>
@@ -69,8 +69,22 @@
 
                                             {% elif page == 'order_history' %}
 
-                                            Contents of order history
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                {% bootstrap_form form %}
+                                            {% buttons %}
+                                            <button type="submit" class="btn btn-primary">
+                                               Submit</button>{% endbuttons %}
+                                                </form>
 
+                                            <ol>
+                                    {% for order in orders %}
+
+
+                                         <li>   {{ order.order_status }}  {{ order.amount }} {{order.type}} </li>
+
+                                            {% endfor %}
+</ol>
 
 
                                             {% endif %}

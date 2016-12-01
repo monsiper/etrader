@@ -29,7 +29,7 @@ class TestAccount(TestCase):
         self.assertFalse(user.account.is_daily_limit_exceeded(order))
         order.execute_order()
         order = Order.objects.place_order_for_user(user=user,type='Buy',amount=700.00)
-        self.assertTrue(user.account.is_daily_limit_exceeded(order))
+        self.assertFalse(user.account.is_daily_limit_exceeded(order))
 
 
 

@@ -20,3 +20,16 @@ class TradeForm(forms.Form):
             num_of_coins = self.cleaned_data['num_of_coins']
             if num_of_coins <= decimal.Decimal(0.0):
                 raise forms.ValidationError('Number of coins has to be greatet than zero')
+
+
+
+class OrderHistoryForm(forms.Form):
+    INTERVAL_CHOICES = (('WEEK', 'past week'),
+                        ('MONTH', 'past month'),
+                        ('YEAR', 'past year'))
+    STATUS_CHOICES = (('All', 'All'),
+                      ('Fail', 'Fail'),
+                      ('Success', 'Success'))
+
+    interval = forms.ChoiceField(initial='WEEK', choices=INTERVAL_CHOICES)
+    status_type = forms.ChoiceField(initial='All', choices=STATUS_CHOICES)

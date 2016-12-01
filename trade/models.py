@@ -101,9 +101,9 @@ class OrderManager(models.Manager):
         if timeframe == 'WEEK':
             start_date = datetime.today() + relativedelta(days=-7)
         elif timeframe == 'MONTH':
-            start_date = datetime.today() + relativedelta(month=-1)
+            start_date = datetime.today() + relativedelta(months=-1)
         elif timeframe == 'YEAR':
-            start_date = datetime.today() + relativedelta(year=-1)
+            start_date = datetime.today() + relativedelta(years=-1)
         else:
             return None
 
