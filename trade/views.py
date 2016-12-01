@@ -3,6 +3,7 @@ from django.core.urlresolvers import reverse
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
 from trade.forms import TradeForm, OrderHistoryForm
+from user_login.forms import LoginForm
 from django.shortcuts import render, redirect
 from get_price import get_current_ETH_price
 from trade.models import Order, Account
@@ -35,6 +36,9 @@ def common_info(user):
 
 
 def display_order_history(request):
+    if not request.user.is_authenticated():
+        empty_Form = LoginForm()
+        return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form}, status=403)
 
     if request.method == "POST":
         form = OrderHistoryForm(request.POST)
@@ -47,11 +51,14 @@ def display_order_history(request):
             orders = None
     else:
         form = OrderHistoryForm()
-        orders = None
+        orders = Order.objects.get_past_orders_for_user(request.user,
+                                                        status='All',
+                                                        timeframe='WEEK')
 
     return render(request, 'user_panel.html', merge_dicts(
         common_info(request.user),
         {'username': request.user.username,
+         'header': 'Past Orders',
          'orders': orders,
          'form': form,
          'parent_page': 'trade',

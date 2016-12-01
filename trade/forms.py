@@ -8,11 +8,12 @@ class TradeForm(forms.Form):
     num_of_coins = forms.DecimalField(max_digits=7,
                                       decimal_places=2,
                                       label='Num of Coins',
-                                      required=True)
-
+                                      required=True,
+                                      widget=forms.TextInput(attrs={'type': 'number', 'step': 0.01, 'min': 0.00}))
     amount = forms.DecimalField(max_digits=8,
                                 decimal_places=2,
-                                label='Amount')
+                                label='Amount',
+                                widget=forms.TextInput(attrs={'type': 'number', 'step': 0.01, 'min': 0.00}))
 
     def clean(self):
         super(TradeForm, self).clean()
