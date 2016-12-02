@@ -20,7 +20,7 @@ class TradeForm(forms.Form):
         if 'num_of_coins' in self.cleaned_data:
             num_of_coins = self.cleaned_data['num_of_coins']
             if num_of_coins <= decimal.Decimal(0.0):
-                raise forms.ValidationError('Number of coins has to be greatet than zero')
+                raise forms.ValidationError('Number of coins has to be greater than zero')
 
 
 

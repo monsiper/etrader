@@ -9,7 +9,7 @@ def test_and_run():
     # run('./manage.py collectstatic')
     start_postgres()
     local('pip install -q -r requirements.txt')
-#    local('./manage.py test')
+    local('./manage.py test')
     local('./manage.py runserver 0.0.0.0:12345')
 
 

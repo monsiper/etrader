@@ -66,16 +66,10 @@ def display_order_history(request):
 
 
 def display_buy_sell_panel(request, type):
-    from ipdb import set_trace
-    # set_trace()
-    # user_num_of_coins = request.user.account.coin
-    # user_cash = request.user.account.cash
-    # coin_price = get_current_ETH_price()['price']
-
-    form = TradeForm()
 
     if not request.user.is_authenticated():
-        return redirect('/')
+        empty_Form = LoginForm()
+        return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form}, status=403)
 
     if request.method == 'GET':
         form = TradeForm()
@@ -84,13 +78,10 @@ def display_buy_sell_panel(request, type):
 
         if form.is_valid():
             if type == 'sell':
-                try:
-                    order = Order.objects.place_order_for_user(user=request.user,
-                                                               type='Sell',
-                                                               amount=form.cleaned_data['num_of_coins'])
-                    success = order.execute_order()
-                except:
-                    return HttpResponse("Unsuccesful because of exception")
+                order = Order.objects.place_order_for_user(user=request.user,
+                                                           type='Sell',
+                                                           amount=form.cleaned_data['num_of_coins'])
+                success = order.execute_order()
 
             elif type == 'buy':
                 order = Order.objects.place_order_for_user(user=request.user,

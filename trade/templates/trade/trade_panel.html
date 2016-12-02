@@ -11,12 +11,16 @@
     <div class="col-lg-2">
         <ul class="nav nav-tabs nav-stacked" role="tablist">
 
-            <li role="presentation" {% if page == 'buy' %} class="active"{%endif %}><a href="{% url 'display_buy' %}">Buy</a></li>
-            <li role="presentation" {% if page == 'sell' %} class="active"{%endif %}><a href="{% url 'display_sell' %}">Sell</a></li>
-            <li role="presentation" {% if page == 'order_history' %} class="active"{%endif %}><a href="{% url 'display_order_history' %}">Order
-            History</a></li>
-            <li role="presentation" {% if page == 'account_transfer' %} class="active"{%endif %}><a href="#account_transfer" aria-controls="settings"
-                                                              role="tab" data-toggle="tab">Account Transfer</a></li>
+            <li role="presentation" {% if page == 'buy' %} class="active"{% endif %}><a href="{% url 'display_buy' %}">Buy</a>
+            </li>
+            <li role="presentation" {% if page == 'sell' %} class="active"{% endif %}><a
+                    href="{% url 'display_sell' %}">Sell</a></li>
+            <li role="presentation" {% if page == 'order_history' %} class="active"{% endif %}><a
+                    href="{% url 'display_order_history' %}">Order
+                History</a></li>
+            <li role="presentation" {% if page == 'account_transfer' %} class="active"{% endif %}><a
+                    href="#account_transfer" aria-controls="settings"
+                    role="tab" data-toggle="tab">Account Transfer</a></li>
             <li role="presentation">
                 <div>
                     <h4>Wallet</h4>
@@ -50,72 +54,73 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         {% if messages %}
-                                        <div class="messages">
+                                            <div class="messages">
                                             {% for message in messages %}
-                                            <div
-                                            {% if message.tags %} class="alert {% if message.tags == 'info' %}
-                                            alert-info {% else %} alert-danger {% endif %}"{% endif %}>{{ message
-                                            }}</li>
+                                                <div{% if message.tags %}
+                                                            class="alert {% if message.tags == 'info' %}
+                                            alert-info {% else %} alert-danger {% endif %}"{% endif %}>{{ message}}
                                             {% endfor %}
                                         </div>
                                         {% endif %}
+                                        </div>
                                     </div>
+                                    {% if page == 'buy' or page == 'sell' %}
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+                                                <form id='buy_form' method="post" role="form" style="display: block;">
+                                                    {% csrf_token %}
+                                                    <div style="float:right">Rate: {{ rate_str }} coin/$</div>
+                                                    {% bootstrap_form form %}
+                                                    {% buttons %}
+                                                        <button type="submit" class="btn btn-primary">
+                                                            {% if page == 'buy' %} BUY {% elif page == 'sell' %}
+                                                                SELL {% endif %}
+                                                        </button>
+                                                    {% endbuttons %}
+
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    {% elif page == 'order_history' %}
+                                        <div class="row">
+                                            <div class="col-lg-4">
+
+                                                <form method="post">
+                                                    {% csrf_token %}
+                                                    {% bootstrap_form form %}
+                                                    {% buttons %}
+                                                        <button type="submit" class="btn btn-primary">
+                                                            Search
+                                                        </button>
+                                                    {% endbuttons %}
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <ol>
+                                                    {% for order in orders %}
+
+
+                                                        <li>{{ order.type }} order for {{ order.amount }} coins {% if order.order_status == 'Success' %}
+                                                            has successfully executed ({{order.last_updated_at }}) {% else %} has failed ({{order.last_updated_at }}) {% endif %} </li>
+
+                                                    {% endfor %}
+                                                </ol>
+                                            </div>
+                                        </div>
+
+                                    {% endif %}
                                 </div>
-                                {% if page == 'buy' or page == 'sell' %}
-                                <div class="row">
-                                    <div class="col-lg-12">
-
-                                        <form id='buy_form' method="post" role="form" style="display: block;">
-                                            {% csrf_token %}
-                                            <div style="float:right">Rate: {{ rate_str }} coin/$</div>
-                                            {% bootstrap_form form %}
-                                            {% buttons %}
-                                            <button type="submit" class="btn btn-primary">
-                                                {% if page == 'buy' %} BUY {% elif page == 'sell' %} SELL {% endif %}
-                                            </button>
-                                            {% endbuttons %}
-
-                                        </form>
-                                    </div>
-                                </div>
-
-                                {% elif page == 'order_history' %}
-                                <div class="row">
-                                    <div class="col-lg-4">
-
-                                        <form method="post">
-                                            {% csrf_token %}
-                                            {% bootstrap_form form %}
-                                            {% buttons %}
-                                            <button type="submit" class="btn btn-primary">
-                                                Submit
-                                            </button>
-                                            {% endbuttons %}
-                                        </form>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <ol>
-                                            {% for order in orders %}
-
-
-                                            <li> {{ order.order_status }} {{ order.amount }} {{order.type}}</li>
-
-                                            {% endfor %}
-                                        </ol>
-                                    </div>
-                                </div>
-
-                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
-
-
-</div>
 
 </div>
 

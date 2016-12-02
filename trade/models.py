@@ -110,11 +110,11 @@ class OrderManager(models.Manager):
         if status == 'All':
             list_of_orders = Order.objects.filter(user=user, order_status__in=['Success','Fail'],
                                               last_updated_at__date__gte=start_date).\
-                                            order_by('last_updated_at').values('type','amount','order_status')
+                                            order_by('-last_updated_at').values('type','amount','order_status','last_updated_at')
         elif status == 'Success' or status == 'Fail':
             list_of_orders = Order.objects.filter(user=user, order_status=status,
                                               last_updated_at__date__gte=start_date).\
-                                            order_by('last_updated_at').values('type','amount','order_status')
+                                            order_by('-last_updated_at').values('type','amount','order_status','last_updated_at')
         else:
             return None
 

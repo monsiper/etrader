@@ -1,0 +1,3733 @@
+Messages
+========
+
+etrader/settings.py
+  Line: 23
+    dodgy: secret / Possible hardcoded secret key
+
+fabfile.py
+  Line: 1
+    pyflakes: F401 / 'run' imported but unused (col 1)
+
+frontend/node_modules/node-gyp/gyp/gyptest.py
+  Line: 74
+    pyflakes: F821 / undefined name 'shlex' (col 17)
+  Line: 147
+    mccabe: MC0001 / main is too complex (26)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSNew.py
+  Line: 52
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 54
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 87
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 101
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 154
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 155
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 156
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 157
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 158
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 159
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 160
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 161
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 162
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 163
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 164
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 165
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 200
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 203
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 216
+    mccabe: MC0001 / MSVSSolution.Write is too complex (21)
+  Line: 228
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 234
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 250
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 251
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 260
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSProject.py
+  Line: 7
+    pyflakes: F401 / 'gyp' imported but unused (col 1)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings.py
+  Line: 362
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 393
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 394
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 461
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSToolFile.py
+  Line: 7
+    pyflakes: F401 / 'gyp' imported but unused (col 1)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSUserFile.py
+  Line: 11
+    pyflakes: F401 / 'gyp' imported but unused (col 1)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSUtil.py
+  Line: 82
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 88
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 96
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 112
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 181
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 241
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 247
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 252
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 253
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.py
+  Line: 12
+    pyflakes: F401 / 'gyp' imported but unused (col 1)
+  Line: 83
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 84
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 85
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 90
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 91
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 123
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 126
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 132
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 133
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 135
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 208
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 212
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 373
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 380
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 409
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 439
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/__init__.py
+  Line: 67
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 68
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 69
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 73
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 74
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 89
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 90
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 95
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 96
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 100
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 101
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 105
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 106
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 107
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 110
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 112
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 114
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 116
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 118
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 121
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 123
+    pep8: E131 / continuation line unaligned for hanging indent (col 9)
+  Line: 126
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 148
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 151
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 207
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 208
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 226
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 259
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 260
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 279
+    mccabe: MC0001 / gyp_main is too complex (45)
+  Line: 318
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 319
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 320
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 321
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 322
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 323
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 324
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 328
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 329
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 330
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 331
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 332
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 333
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 352
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 367
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 17)
+  Line: 389
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 407
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 424
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 425
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 426
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 427
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 428
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 429
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 441
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 442
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 451
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 452
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 456
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 457
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 458
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 470
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 473
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 474
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 475
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 19)
+  Line: 481
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 485
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 486
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 496
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 497
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 532
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/common.py
+  Line: 57
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 59
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 76
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 77
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 78
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 79
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 80
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 81
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 82
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 83
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 84
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 89
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 90
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 91
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 92
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 93
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 94
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 97
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 110
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 124
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 125
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 126
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 135
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 136
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 137
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 138
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 139
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 140
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 141
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 150
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 151
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 154
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 157
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 161
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 164
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 165
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 173
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 192
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 199
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 200
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 201
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 342
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 355
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 371
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 372
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 375
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 376
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 377
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 378
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 379
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 380
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 381
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 382
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 383
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 384
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 439
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 440
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 450
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 456
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 462
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 526
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 544
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 600
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 601
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py
+  Line: 47
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 53
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 66
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 79
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 92
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 93
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 124
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 132
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py
+  Line: 44
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 45
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py
+  Line: 66
+    pyflakes: F401 / 'ninja_syntax' imported but unused (col 1)
+  Line: 70
+    pyflakes: F401 / 'sys' imported but unused (col 1)
+  Line: 127
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 128
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 144
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 177
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 178
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 179
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 183
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 194
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 195
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 284
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 313
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 328
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 331
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 334
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 337
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 338
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 341
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 344
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 366
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 475
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 476
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 477
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 478
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 479
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 480
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 508
+    mccabe: MC0001 / _WriteOutput is too complex (16)
+  Line: 585
+    pyflakes: F841 / local variable 'generator_additional_non_configuration_keys' is assigned to but never used (col 5)
+  Line: 587
+    pyflakes: F841 / local variable 'generator_additional_path_sections' is assigned to but never used (col 5)
+  Line: 653
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 654
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py
+  Line: 248
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 249
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 261
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 273
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 274
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 275
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 276
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 277
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 278
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 279
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 288
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 289
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 290
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 291
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 292
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 293
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 297
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 298
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 299
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 406
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 407
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 557
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 598
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 599
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 669
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 670
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 678
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 739
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 744
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 879
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 880
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 952
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 966
+    pyflakes: F841 / local variable 'builddir_name' is assigned to but never used (col 3)
+  Line: 989
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 990
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 991
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 993
+    pyflakes: F841 / local variable 'toolsets' is assigned to but never used (col 3)
+  Line: 1002
+    pyflakes: F841 / local variable 'srcdir' is assigned to but never used (col 3)
+  Line: 1012
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1013
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1014
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1017
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1034
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1035
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1036
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1041
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1042
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1044
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 1086
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py
+  Line: 105
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 363
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 364
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 367
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 379
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 401
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 402
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 443
+    mccabe: MC0001 / WriteCopies is too complex (16)
+  Line: 455
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 501
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 512
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 536
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 610
+    mccabe: MC0001 / WriteTarget is too complex (75)
+  Line: 613
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 614
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 626
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 628
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 654
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 659
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 664
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 669
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 672
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 673
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 736
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 737
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 757
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 758
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 759
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 760
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 761
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 762
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 763
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 796
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 805
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 892
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 946
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 947
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 968
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 969
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 970
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 971
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 972
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 974
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 992
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 993
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1024
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1063
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1064
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1065
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1066
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1069
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1072
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1073
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1120
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1121
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1123
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1124
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1133
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1134
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1135
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1136
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1137
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1142
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1149
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1150
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1169
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1170
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1173
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1192
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1193
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/dump_dependency_json.py
+  Line: 5
+    pyflakes: F401 / 'collections' imported but unused (col 1)
+  Line: 11
+    pyflakes: F401 / 'sys' imported but unused (col 1)
+  Line: 24
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 46
+    pyflakes: F841 / local variable 'generator_additional_non_configuration_keys' is assigned to but never used (col 5)
+  Line: 48
+    pyflakes: F841 / local variable 'generator_additional_path_sections' is assigned to but never used (col 5)
+  Line: 64
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 75
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 78
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py
+  Line: 35
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 63
+    pyflakes: F841 / local variable 'generator_additional_non_configuration_keys' is assigned to but never used (col 5)
+  Line: 65
+    pyflakes: F841 / local variable 'generator_additional_path_sections' is assigned to but never used (col 5)
+  Line: 80
+    mccabe: MC0001 / GetAllIncludeDirectories is too complex (20)
+  Line: 93
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 128
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 129
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 130
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 131
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 144
+    pep8: W601 / .has_key() is deprecated, use 'in' (col 16)
+  Line: 158
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 162
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 165
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 177
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 184
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 202
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 228
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 287
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 288
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 293
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 294
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 362
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 364
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 365
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 391
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 394
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 395
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 396
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 397
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 398
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 403
+    pep8: E114 / indentation is not a multiple of four (comment) (col 15)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/gypd.py
+  Line: 35
+    pyflakes: F401 / 'errno' imported but unused (col 1)
+  Line: 36
+    pyflakes: F401 / 'os' imported but unused (col 1)
+  Line: 88
+    pep8: E713 / test for membership should be 'not in' (col 8)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/gypsh.py
+  Line: 50
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 51
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 52
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 26
+    pyflakes: F401 / 'sys' imported but unused (col 1)
+  Line: 103
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 164
+    pep8: E501 / line too long (164 > 159 characters) (col 160)
+  Line: 167
+    pep8: E501 / line too long (180 > 159 characters) (col 160)
+  Line: 203
+    pep8: E501 / line too long (164 > 159 characters) (col 160)
+  Line: 206
+    pep8: E501 / line too long (180 > 159 characters) (col 160)
+  Line: 595
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 596
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 684
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 690
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 701
+    mccabe: MC0001 / MakefileWriter.Write is too complex (20)
+  Line: 753
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 880
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 881
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 892
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 907
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 908
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 909
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 913
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 914
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 915
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 916
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 917
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 918
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 926
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 929
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 930
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 931
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 932
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 933
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 945
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 952
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1003
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1004
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1005
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1006
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1007
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1008
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1062
+    pep8: E131 / continuation line unaligned for hanging indent (col 15)
+  Line: 1150
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1415
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1416
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1417
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1427
+    mccabe: MC0001 / MakefileWriter.WriteTarget is too complex (40)
+  Line: 1455
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1467
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1505
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1506
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1507
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1516
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1517
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1530
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1531
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1534
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1535
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1539
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1540
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1545
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1546
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1551
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1554
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1555
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1556
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1557
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1558
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1583
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 1607
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1616
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 1629
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 1638
+    pep8: E713 / test for membership should be 'not in' (col 36)
+  Line: 1639
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 1644
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1730
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1731
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1735
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1738
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1739
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1740
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1741
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1742
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1743
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1744
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1745
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1867
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1868
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1869
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1870
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1871
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1872
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1880
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 1899
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1900
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1901
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1966
+    mccabe: MC0001 / GenerateOutput is too complex (33)
+  Line: 1991
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1992
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1993
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2093
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2101
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2102
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2109
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2110
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2120
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2124
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2144
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2145
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2146
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2151
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2152
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2154
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 2178
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2185
+    pyflakes: F812 / list comprehension redefines 'target' from line 2133 (col 60)
+  Line: 2199
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2215
+    pep8: E129 / visually indented line with same indent as next logical line (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py
+  Line: 5
+    pyflakes: F401 / 'copy' imported but unused (col 1)
+  Line: 203
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 212
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 213
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 224
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 233
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 250
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 355
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 356
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 357
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 364
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 365
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 366
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 367
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 392
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 402
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 403
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 404
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 407
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 435
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 537
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 554
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 557
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 581
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 584
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 595
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 596
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 598
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 603
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 609
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 613
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 617
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 621
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 624
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 627
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 629
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 636
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 637
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 690
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 692
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 729
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 732
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 752
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 753
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 767
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 791
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 792
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 815
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 819
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 827
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 832
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 833
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 834
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 836
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 876
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 878
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 899
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 920
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 938
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 941
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 982
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 991
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 992
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 993
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 996
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1001
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1012
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1022
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1023
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1030
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1044
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1114
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1128
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1130
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1134
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1141
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1148
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1154
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1158
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1161
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1164
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1166
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1168
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1176
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1177
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1180
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1196
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1197
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1235
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1236
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1237
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1238
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1263
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1361
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 1385
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1392
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1397
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1402
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1439
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1443
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1454
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1477
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1479
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1481
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1482
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1483
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1485
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1491
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1494
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1500
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1501
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1515
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1516
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1530
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1546
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1547
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1557
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1562
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1566
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1567
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1577
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1587
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1588
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1589
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1590
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1596
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1620
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1626
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1628
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1629
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1630
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1631
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1650
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1662
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1679
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1683
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1684
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1701
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1702
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1713
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1732
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1733
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1734
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1737
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 1748
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1754
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1755
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1756
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1759
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1761
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1784
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1785
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1808
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1835
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1836
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1860
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1898
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1901
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1904
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1907
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1908
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1909
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1910
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1912
+    pep8: E129 / visually indented line with same indent as next logical line (col 7)
+  Line: 1937
+    pyflakes: F841 / local variable 'rtn' is assigned to but never used (col 5)
+  Line: 1953
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1954
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1959
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1962
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1963
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1967
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1971
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1979
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1983
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2066
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2071
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2075
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2080
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2084
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2134
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2135
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2136
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2137
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2425
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2683
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2700
+    pep8: W601 / .has_key() is deprecated, use 'in' (col 16)
+  Line: 2809
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2810
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2831
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2832
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2833
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2922
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2923
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2924
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2925
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2926
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2929
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2935
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2936
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2937
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2938
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2960
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2961
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 3008
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3009
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3010
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3011
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3018
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3019
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3030
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3035
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3038
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3048
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3050
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3053
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3054
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3057
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3153
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 3170
+    pep8: E114 / indentation is not a multiple of four (comment) (col 15)
+  Line: 3171
+    pep8: E114 / indentation is not a multiple of four (comment) (col 15)
+  Line: 3226
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3228
+    pyflakes: F841 / local variable 'relative_path_of_gyp_file' is assigned to but never used (col 3)
+  Line: 3233
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3241
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3258
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3280
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3330
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3331
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 3412
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 3413
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 3414
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 3415
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py
+  Line: 17
+    pyflakes: F401 / 'OrderedSet' imported but unused (col 1)
+  Line: 76
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 77
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 234
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 266
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 267
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 364
+    mccabe: MC0001 / NinjaWriter.WriteSpec is too complex (20)
+  Line: 469
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 592
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 615
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 624
+    mccabe: MC0001 / NinjaWriter.WriteRules is too complex (21)
+  Line: 629
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 633
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 647
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 648
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 650
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 651
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 652
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 668
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 669
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 670
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 680
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 698
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 699
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 700
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 725
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 24)
+  Line: 729
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 744
+    pyflakes: F402 / import 'copy' from line 6 shadowed by loop variable (col 9)
+  Line: 754
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 755
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 756
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 757
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 758
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 759
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 837
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 884
+    mccabe: MC0001 / NinjaWriter.WriteSourcesForArch is too complex (25)
+  Line: 903
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 965
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1077
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1078
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1080
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 1088
+    mccabe: MC0001 / NinjaWriter.WriteLinkForArch is too complex (34)
+  Line: 1103
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1104
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1105
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1106
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1117
+    pep8: E129 / visually indented line with same indent as next logical line (col 15)
+  Line: 1174
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1175
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1216
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1217
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1233
+    pep8: E129 / visually indented line with same indent as next logical line (col 13)
+  Line: 1268
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1269
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1275
+    pep8: E129 / visually indented line with same indent as next logical line (col 11)
+  Line: 1302
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1303
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1459
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1462
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1505
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1506
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1541
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1569
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1648
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1649
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1652
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1655
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1661
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1725
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1731
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1732
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1782
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1783
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1796
+    mccabe: MC0001 / GenerateOutputForConfig is too complex (50)
+  Line: 1802
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1803
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1812
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1815
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1816
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1817
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1818
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1819
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1820
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1821
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1887
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1933
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1934
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2081
+    pep8: E131 / continuation line unaligned for hanging indent (col 11)
+  Line: 2150
+    pep8: E131 / continuation line unaligned for hanging indent (col 14)
+  Line: 2154
+    pep8: E131 / continuation line unaligned for hanging indent (col 11)
+  Line: 2158
+    pep8: E131 / continuation line unaligned for hanging indent (col 13)
+  Line: 2264
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2266
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2267
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2270
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2271
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2272
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2275
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2276
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2318
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2344
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2345
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2346
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2372
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2373
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2381
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode.py
+  Line: 135
+    mccabe: MC0001 / XcodeProject.Finalize1 is too complex (25)
+  Line: 235
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 236
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 250
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 251
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 340
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 341
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 342
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 357
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 358
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 381
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 390
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 391
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 482
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 483
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 491
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 492
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 495
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 496
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 497
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 498
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 517
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 518
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 523
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 524
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 541
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 14)
+  Line: 547
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 603
+    mccabe: MC0001 / GenerateOutput is too complex (100)
+  Line: 604
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 618
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 697
+    pep8: E131 / continuation line unaligned for hanging indent (col 11)
+  Line: 801
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 802
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 803
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 805
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 812
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 815
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 816
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 822
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 825
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 826
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 845
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 899
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 900
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 901
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 902
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 903
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 904
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 905
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 906
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 907
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 908
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 909
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 910
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 911
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 912
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 913
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 914
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 915
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 916
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 917
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 918
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 919
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 920
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 922
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 923
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 924
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 929
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 932
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 933
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 934
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 935
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 958
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 959
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 960
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 961
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 962
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 966
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1017
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1018
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1019
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1020
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1021
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1035
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1036
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1037
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1049
+    pep8: E129 / visually indented line with same indent as next logical line (col 17)
+  Line: 1054
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1055
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1066
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1067
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1072
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1073
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1120
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1121
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1122
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1126
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1127
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1175
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1176
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1177
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1210
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1211
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1219
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1220
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1221
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1222
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1223
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/input.py
+  Line: 10
+    pyflakes: F401 / 'Node' imported but unused (col 1)
+  Line: 16
+    pyflakes: F401 / 'optparse' imported but unused (col 1)
+  Line: 24
+    pyflakes: F401 / 'time' imported but unused (col 1)
+  Line: 62
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 63
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 64
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 71
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 72
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 73
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 74
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 162
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 15)
+  Line: 257
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 259
+    pep8: E129 / visually indented line with same indent as next logical line (col 7)
+  Line: 278
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 15)
+  Line: 282
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 283
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 284
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 291
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 293
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 303
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 329
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 330
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 338
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 361
+    mccabe: MC0001 / LoadTargetBuildFile is too complex (18)
+  Line: 363
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 364
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 375
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 376
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 377
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 378
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 379
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 380
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 383
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 393
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 396
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 397
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 411
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 412
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 415
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 419
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 420
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 423
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 424
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 432
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 433
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 434
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 435
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 436
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 437
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 438
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 450
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 451
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 452
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 453
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 577
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 709
+    mccabe: MC0001 / ExpandVariables is too complex (45)
+  Line: 710
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 727
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 731
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 732
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 738
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 739
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 740
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 741
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 789
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 793
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 809
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 810
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 856
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 857
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 858
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 859
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 860
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 861
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 862
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 863
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 864
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 875
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 876
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 877
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 878
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 879
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 894
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 30)
+  Line: 899
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 929
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 931
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 932
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 933
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 934
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 935
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 936
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 937
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 938
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 939
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 954
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 955
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 956
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 965
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 966
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 967
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 975
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1019
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1061
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 15)
+  Line: 1072
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1073
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1074
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1075
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1081
+    pep8: E131 / continuation line unaligned for hanging indent (col 13)
+  Line: 1105
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1106
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1107
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1108
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1109
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1110
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1111
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1112
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1113
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1114
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1115
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1116
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1117
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1118
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1119
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1130
+    pep8: E713 / test for membership should be 'not in' (col 6)
+  Line: 1134
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1141
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 19)
+  Line: 1142
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1151
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1152
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1159
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1160
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1161
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1162
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1163
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1164
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1165
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1195
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1196
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1228
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1229
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1234
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1235
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1236
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1237
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1238
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1239
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1240
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1241
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1242
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1243
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1244
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1245
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1246
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1247
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1248
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1249
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1250
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1251
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1252
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1253
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1254
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1255
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1256
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1257
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1258
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1259
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1261
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1262
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1263
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1264
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1265
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1268
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1269
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1274
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1275
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1282
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1283
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1287
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1288
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1289
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1290
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1300
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1305
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1306
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1382
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1414
+    pyflakes: F841 / local variable 'toolset' is assigned to but never used (col 5)
+  Line: 1419
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1420
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1426
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1431
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1432
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1451
+    pep8: E129 / visually indented line with same indent as next logical line (col 15)
+  Line: 1455
+    pep8: E129 / visually indented line with same indent as next logical line (col 15)
+  Line: 1549
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1550
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1551
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1552
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1556
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1557
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1564
+    pep8: E713 / test for membership should be 'not in' (col 14)
+  Line: 1573
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1574
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1575
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1591
+    pep8: E713 / test for membership should be 'not in' (col 14)
+  Line: 1602
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 21)
+  Line: 1606
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1607
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 25)
+  Line: 1630
+    pep8: E711 / comparison to None should be 'if cond is None:' (col 21)
+  Line: 1637
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1638
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1639
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1640
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1641
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1642
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1665
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1666
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1670
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1696
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1697
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1720
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1721
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1722
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1723
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1728
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 1747
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 1787
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1788
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1794
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1795
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1799
+    pyflakes: F841 / local variable 'target_build_file' is assigned to but never used (col 5)
+  Line: 1815
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1816
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1819
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1820
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1837
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1838
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1842
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 1845
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1869
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1878
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1879
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1882
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1883
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1896
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1897
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1917
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 1926
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1929
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1930
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1931
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1937
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 1943
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1944
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1945
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1946
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1947
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1948
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1949
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1950
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1963
+    pep8: E713 / test for membership should be 'not in' (col 13)
+    pep8: E129 / visually indented line with same indent as next logical line (col 16)
+  Line: 1964
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1965
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1966
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1971
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1972
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1979
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1980
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1981
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1988
+    pep8: E713 / test for membership should be 'not in' (col 12)
+  Line: 1990
+    pep8: E713 / test for membership should be 'not in' (col 12)
+  Line: 1992
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1993
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1994
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1995
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2006
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2007
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2008
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2009
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2010
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2011
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2012
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2013
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2014
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2015
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2016
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2017
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2018
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2019
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2020
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2021
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2022
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2032
+    pep8: E131 / continuation line unaligned for hanging indent (col 33)
+  Line: 2038
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2039
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2042
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2050
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2051
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2056
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2068
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2069
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2070
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2074
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2075
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2076
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2077
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2078
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2087
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2088
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2094
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2095
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2096
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2100
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2101
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2102
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2109
+    mccabe: MC0001 / MergeDicts is too complex (20)
+  Line: 2110
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2122
+    pep8: E721 / do not compare types, use 'isinstance()' (col 20)
+  Line: 2131
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2138
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2139
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 2143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2144
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2145
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2146
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2147
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2148
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2149
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2150
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2151
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2152
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2153
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2154
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2172
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2173
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2174
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2182
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2183
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2186
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2187
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2195
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2196
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2197
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2198
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2199
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2210
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2214
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2217
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2222
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2226
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2231
+    mccabe: MC0001 / SetUpConfigurations is too complex (18)
+  Line: 2232
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2233
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2234
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2235
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2240
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2241
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2242
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2243
+    pep8: E713 / test for membership should be 'not in' (col 6)
+  Line: 2245
+    pep8: E713 / test for membership should be 'not in' (col 6)
+  Line: 2266
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 2275
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2280
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2286
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2287
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2288
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2296
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2301
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2311
+    mccabe: MC0001 / ProcessListFiltersInDict is too complex (27)
+  Line: 2334
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2335
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2336
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2337
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2338
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2339
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2340
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2355
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2356
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2357
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2368
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2371
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2398
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2408
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2411
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2414
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2428
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2461
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2495
+    pep8: E129 / visually indented line with same indent as next logical line (col 7)
+  Line: 2541
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2542
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2639
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2640
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2687
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2689
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2709
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2724
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2731
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2732
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2749
+    mccabe: MC0001 / Load is too complex (21)
+  Line: 2752
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2753
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2756
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2757
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2758
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2759
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2760
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2761
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2762
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2764
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2765
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2780
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2783
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2786
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2787
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2790
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2793
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2794
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2797
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2811
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2827
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2830
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2842
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2843
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2844
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2850
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2857
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2862
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2867
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2874
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2875
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2876
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2877
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2888
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2891
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2892
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2893
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py
+  Line: 53
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 54
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 55
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 56
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 128
+    pyflakes: F821 / undefined name 'e' (col 12)
+  Line: 164
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 165
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 166
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 167
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 168
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 169
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 267
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 268
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 515
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 516
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 517
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py
+  Line: 27
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 28
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 29
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 30
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 31
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 33
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 34
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 35
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 38
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 39
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 40
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 41
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 42
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 45
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 46
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 48
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 49
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 55
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 56
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 57
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 58
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 59
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 83
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 120
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 133
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 142
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 143
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 147
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 148
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 149
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 150
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 153
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 154
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 168
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 176
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 180
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 472
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 672
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 673
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 674
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 969
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 970
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 971
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 972
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 996
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1065
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1066
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1075
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1079
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1080
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1081
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1082
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1084
+    pep8: E129 / visually indented line with same indent as next logical line (col 7)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py
+  Line: 13
+    pyflakes: F401 / 're' imported but unused (col 1)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py
+  Line: 94
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 95
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 102
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 128
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 165
+    pep8: E131 / continuation line unaligned for hanging indent (col 11)
+  Line: 178
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 179
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 186
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 187
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 271
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 285
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py
+  Line: 18
+    pyflakes: F401 / 'tempfile' imported but unused (col 1)
+  Line: 46
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 75
+    pyflakes: F841 / local variable 'e' is assigned to but never used (col 28)
+  Line: 147
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 148
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 152
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 153
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 156
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 157
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 191
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 290
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 458
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 467
+    mccabe: MC0001 / XcodeSettings.GetCflags is too complex (28)
+  Line: 494
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 495
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 496
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 553
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 624
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 678
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 701
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 811
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 836
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 837
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 838
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 839
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 917
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 954
+    pep8: E129 / visually indented line with same indent as next logical line (col 9)
+  Line: 1122
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1242
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1243
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1244
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1245
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1246
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1247
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1248
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1249
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1272
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1284
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1285
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1286
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1287
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1288
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1289
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1290
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1320
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1321
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1322
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1409
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1410
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1416
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1417
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1449
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1450
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1453
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1522
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1525
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1554
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1555
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1556
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/xcode_ninja.py
+  Line: 58
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 81
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 137
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 141
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 168
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 169
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 176
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 181
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 188
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 189
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 190
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 194
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 195
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 201
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 206
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 209
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 217
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 227
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 248
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 254
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 268
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py
+  Line: 272
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 332
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 333
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 387
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 13)
+  Line: 448
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 449
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 450
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 634
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 16)
+  Line: 709
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 710
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 711
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 712
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 713
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 714
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 715
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 716
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 717
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 739
+    mccabe: MC0001 / XCObject.UpdateProperties is too complex (20)
+  Line: 756
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 757
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 760
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 784
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 812
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 813
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 838
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 851
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 870
+    pep8: E713 / test for membership should be 'not in' (col 26)
+  Line: 881
+    pep8: E713 / test for membership should be 'not in' (col 11)
+  Line: 887
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 888
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 896
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 897
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 898
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 899
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 900
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 917
+    pep8: E713 / test for membership should be 'not in' (col 39)
+  Line: 924
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 926
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 927
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 928
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 930
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 22)
+  Line: 932
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 15)
+  Line: 934
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 22)
+  Line: 935
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 948
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 977
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 986
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 987
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 996
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 13)
+  Line: 1018
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1045
+    pep8: E713 / test for membership should be 'not in' (col 31)
+  Line: 1047
+    pep8: E713 / test for membership should be 'not in' (col 32)
+  Line: 1087
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 20)
+  Line: 1089
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 22)
+  Line: 1130
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 21)
+  Line: 1173
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 1200
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 1260
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 33)
+  Line: 1262
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1263
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1267
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 21)
+  Line: 1282
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 24)
+  Line: 1293
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1294
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1295
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1298
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 20)
+  Line: 1326
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 13)
+  Line: 1355
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1359
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1360
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1361
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1366
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 1380
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 1383
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1384
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1385
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1386
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 62)
+  Line: 1393
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1414
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1415
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1427
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 16)
+  Line: 1436
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1437
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1442
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1443
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1456
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1458
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1471
+    pep8: E713 / test for membership should be 'not in' (col 9)
+  Line: 1473
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1474
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1551
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1578
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 1590
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1711
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1745
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1746
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1747
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1748
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1749
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1750
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1751
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1817
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 13)
+  Line: 1818
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1822
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1823
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1859
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1860
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1861
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1865
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1874
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1884
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1894
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1904
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1914
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1915
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1916
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 1948
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1949
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1952
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1953
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 1986
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2001
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2039
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2040
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2041
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2042
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2043
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2044
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2045
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2046
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2047
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2048
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2049
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2050
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2051
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2052
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2053
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2054
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2055
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2084
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2085
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2086
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2087
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2088
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2089
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2090
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2091
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2092
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2127
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2128
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2129
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2130
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2131
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2132
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2133
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2154
+    pep8: E713 / test for membership should be 'not in' (col 10)
+  Line: 2168
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2177
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2190
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2222
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2223
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2224
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2225
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2226
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2227
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2228
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2229
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2239
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2240
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2241
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2242
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2277
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2281
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 21)
+  Line: 2284
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 25)
+  Line: 2325
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2326
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2380
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2401
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2402
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2422
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2423
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2488
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2489
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2490
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2551
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2562
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2563
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2570
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2571
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2572
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2576
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2577
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 2612
+    pep8: E711 / comparison to None should be 'if cond is not None:' (col 20)
+  Line: 2663
+    pep8: E114 / indentation is not a multiple of four (comment) (col 11)
+  Line: 2688
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2694
+    pep8: E713 / test for membership should be 'not in' (col 8)
+  Line: 2695
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2696
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2699
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2702
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2703
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2704
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2705
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2708
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2709
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2710
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2711
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2721
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2733
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2739
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2762
+    pep8: E129 / visually indented line with same indent as next logical line (col 5)
+  Line: 2835
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2836
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2837
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2843
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2844
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2848
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2849
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2856
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2857
+    pep8: E114 / indentation is not a multiple of four (comment) (col 7)
+  Line: 2912
+    pep8: E713 / test for membership should be 'not in' (col 10)
+
+frontend/node_modules/node-gyp/gyp/pylib/gyp/xml_fix.py
+  Line: 29
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 30
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+  Line: 31
+    pep8: E114 / indentation is not a multiple of four (comment) (col 3)
+
+frontend/node_modules/node-gyp/gyp/tools/pretty_gyp.py
+  Line: 138
+    pyflakes: F841 / local variable 'last_line' is assigned to but never used (col 7)
+
+frontend/node_modules/node-gyp/gyp/tools/pretty_vcproj.py
+  Line: 144
+    mccabe: MC0001 / CleanupVcproj is too complex (16)
+
+main/admin.py
+  Line: 1
+    pyflakes: F401 / 'admin' imported but unused (col 1)
+
+main/models.py
+  Line: 3
+    pyflakes: F401 / 'models' imported but unused (col 1)
+
+main/views.py
+  Line: 6
+    pyflakes: F401 / 'TradeForm' imported but unused (col 1)
+  Line: 7
+    pyflakes: F401 / 'get_current_ETH_price' imported but unused (col 1)
+
+trade/admin.py
+  Line: 1
+    pyflakes: F401 / 'admin' imported but unused (col 1)
+
+trade/forms.py
+  Line: 2
+    pyflakes: F401 / 'authenticate' imported but unused (col 1)
+  Line: 3
+    pyflakes: F401 / 'User' imported but unused (col 1)
+
+trade/views.py
+  Line: 3
+    pyflakes: F401 / 'HttpResponse' imported but unused (col 1)
+  Line: 7
+    pyflakes: F811 / redefinition of unused 'render' from line 4 (col 1)
+  Line: 9
+    pyflakes: F401 / 'Account' imported but unused (col 1)
+
+user_login/admin.py
+  Line: 1
+    pyflakes: F401 / 'admin' imported but unused (col 1)
+
+user_login/models.py
+  Line: 3
+    pyflakes: F401 / 'models' imported but unused (col 1)
+
+user_login/views.py
+  Line: 3
+    pyflakes: F401 / 'HttpResponse' imported but unused (col 1)
+
+
+
+Check Information
+=================
+         Started: 2016-12-01 23:33:19.813513
+        Finished: 2016-12-01 23:34:08.826341
+      Time Taken: 49.01 seconds
+       Formatter: grouped
+        Profiles: default, strictness_medium, strictness_high, strictness_veryhigh, no_doc_warnings, no_test_warnings, no_member_warnings
+      Strictness: medium
+  Libraries Used: django
+       Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
+  Messages Found: 1813
+ External Config: pylint: /Users/monsiper/.pylintrc
+
