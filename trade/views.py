@@ -7,6 +7,7 @@ from user_login.forms import LoginForm
 from django.shortcuts import render, redirect
 from get_price import get_current_ETH_price
 from trade.models import Order, Account
+from .tasks import update_last_login_for_user
 
 
 def merge_dicts(*dict_args):
@@ -65,11 +66,23 @@ def display_order_history(request):
          'page': 'order_history'}))
 
 
+
 def display_buy_sell_panel(request, type):
+
+
+
+    from ipdb import set_trace
+    # set_trace()
 
     if not request.user.is_authenticated():
         empty_Form = LoginForm()
         return render(request, "user_login/login_or_signup.html", {'header': 'Login', 'form': empty_Form}, status=403)
+
+    update_last_login_for_user.delay(request.user.id)
+
+    # TASK STORe {"task_name": "update_last_login", "args": [1]}
+
+    # RESULT STORE:
 
     if request.method == 'GET':
         form = TradeForm()

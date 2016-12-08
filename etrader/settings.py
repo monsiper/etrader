@@ -61,6 +61,8 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'etrader.urls'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 10000
 
 TEMPLATES = [
     {
@@ -138,3 +140,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CELERY_BROKER_URL = "redis://localhost:6379/0"
+
+CELERY_BEAT_SCHEDULE = {
+    'add-every-10-minutes': {
+        'task': 'trade.tasks.update_eth_price',
+        'schedule': 60 * 10,
+        'args': ()
+    },
+
+}

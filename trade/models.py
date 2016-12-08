@@ -207,3 +207,6 @@ class Order(models.Model):
 #                      'exceed account balance or daily limit'
 
 
+class EthereumPrice(models.Model):
+    price = models.DecimalField(max_digits=40, decimal_places=30)
+    date_created = models.DateTimeField(auto_now_add=True)

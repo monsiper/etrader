@@ -5,7 +5,6 @@ from user_login.forms import LoginForm
 # Create your views here.
 from trade.forms import TradeForm
 from trade.get_price import get_current_ETH_price
-from django.contrib.auth.decorators import login_required
 
 class TestForm(forms.Form):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'required': True, 'class': 'form-control'}))
@@ -18,7 +17,6 @@ def main_page(request):
     return render(request, 'main_page.html')
 
 
-@login_required
 def user_panel(request, type='dashboard'):
     if not request.user.is_authenticated():
         empty_Form = LoginForm()
