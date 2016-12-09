@@ -6,7 +6,7 @@ from django.dispatch import receiver
 from django.utils import timezone
 from django.contrib.auth.models import User
 import decimal,logging
-from get_price import get_current_ETH_price
+from get_price import get_current_ETH_price, URL_ETH_PRICE
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 # Create your models here.
@@ -32,8 +32,6 @@ def create_account(instance, created, **kwargs):
         Account.objects.create_account_for_user(instance)
 
 
-# user.account
-# account.user
 
 class Account(models.Model):
     objects = AccountManager()
@@ -72,7 +70,7 @@ class Account(models.Model):
     def has_enough_cash_or_coin_for_order(self, order):
 
         if order.type == 'Buy':
-            coin_price = get_current_ETH_price()
+            coin_price = get_current_ETH_price(URL_ETH_PRICE)
 
             if order.amount*coin_price['price'] > self.cash:
                 return False
@@ -84,7 +82,6 @@ class Account(models.Model):
                 return False
             else:
                 return True
-
 
 
 class OrderManager(models.Manager):
@@ -149,7 +146,6 @@ class Order(models.Model):
         else:
             return None
 
-
     def change_order_status(self, new_status):
 
         if new_status in ['Pending', 'Success', 'Fail'] and self.order_status != new_status:
@@ -180,7 +176,7 @@ class Order(models.Model):
         account.save(update_fields=['processing_lock'])
 
         if self.is_valid():
-            coin_price = get_current_ETH_price()
+            coin_price = get_current_ETH_price(URL_ETH_PRICE)
 
             if self.type=='Buy':
                 account.cash -= self.amount*coin_price['price']

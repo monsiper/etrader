@@ -1,16 +1,29 @@
 from django.contrib.auth.models import User
 from trade.models import Order, Account
 from django.test import TestCase
-from get_price import get_current_ETH_price
+from get_price import get_current_ETH_price, URL_ETH_PRICE
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-import pytz
-
+import pytz,decimal
+from trade.views import merge_dicts, common_info
+from django.test import Client
 
 # Create your tests here.
 
 
 # a user must have one and only one account
+class TestTradeViews(TestCase):
+
+    def test_merge_dicts(self):
+        dict_a = {'a':1, 'b':2, 'c':3}
+        dict_b = {'d':5, 'e':8}
+        self.assertEqual(len(merge_dicts(dict_a, dict_b)),5)
+        dict_b = {}
+        self.assertEqual(len(merge_dicts(dict_a, dict_b)), 3)
+
+    def test_common_info(self):
+        user = User.objects.create_user(username='foo')
+        self.assertEqual(len(common_info(user)),4)
 
 
 class TestAccount(TestCase):
@@ -31,15 +44,19 @@ class TestAccount(TestCase):
         order = Order.objects.place_order_for_user(user=user,type='Buy',amount=700.00)
         self.assertFalse(user.account.is_daily_limit_exceeded(order))
 
-
-
 class TestOrder(TestCase):
 
-
     def test_place_order(self):
+        #test case: user account is active
         user = User.objects.create_user(username="foo")
         order = Order.objects.place_order_for_user(user=user,type='Buy',amount=5.00)
+        self.assertTrue(order)
+        self.assertEqual(Order.objects.filter(user=user).count(),1)
 
+        #test case: user account is inactive
+        user.account.is_active = False
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=5.00)
+        self.assertFalse(order)
         self.assertEqual(Order.objects.filter(user=user).count(),1)
 
 
@@ -72,10 +89,25 @@ class TestOrder(TestCase):
 
     def test_execute_order_greater_than_daily_limit(self):
 
+        #test case: order coin amount > daily buy limit
         user = User.objects.create_user(username="foo")
-        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=2000.00)
-        self.assertEqual(order.execute_order(),False)
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=500.00)
+        self.assertEqual(order.execute_order(),True)
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=500.00)
+        self.assertEqual(order.execute_order(),True)
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=100.00)
+        self.assertEqual(order.execute_order(), False)
         self.assertEqual(order.order_status, 'Fail')
+
+        #test case: order sell amount > daily sell limit
+        user.account.coin = decimal.Decimal(2000.00)
+        user.account.save(update_fields=['coin'])
+        order = Order.objects.place_order_for_user(user=user,type='Sell',amount=500.00)
+        self.assertEqual(order.execute_order(),True)
+        order = Order.objects.place_order_for_user(user=user,type='Sell',amount=500.00)
+        self.assertEqual(order.execute_order(), True)
+        order = Order.objects.place_order_for_user(user=user,type='Sell',amount=100.00)
+        self.assertEqual(order.execute_order(), False)
 
     def test_is_valid(self):
 
@@ -91,20 +123,28 @@ class TestOrder(TestCase):
         order.amount = 2000.00
         self.assertFalse(order.is_valid())
 
-        order.type = 'Sell'
+        #test case: order cash amount > cash in the account
+        user.account.cash = decimal.Decimal(1000.00)
+        order.amount = decimal.Decimal(500.00)
         self.assertFalse(order.is_valid())
 
-        order.amount = 500.00
-        user.account.coin = 1000.00
-        self.assertTrue(order.is_valid())
+        #test case: order coin amount > coins in the account
+        order.type = 'Sell'
+        order.amount = decimal.Decimal(500.00)
+        self.assertFalse(order.is_valid())
 
 
     def test_get_current_ETH_price(self):
 
-        response = get_current_ETH_price()
-
+        #test case: pulling price from the valid site
+        response = get_current_ETH_price(URL_ETH_PRICE)
         self.assertEqual(response['status'], 'Success')
         self.assertGreater(response['price'], 0)
+
+        #test case: pulling price from an invalid site
+        response = get_current_ETH_price('http://www.cnn.com/mehmetonsiper')
+        self.assertEqual(response['status'], 'Error')
+        self.assertEqual(response['price'], None)
 
     def test_get_past_orders_for_user(self):
 
@@ -120,6 +160,11 @@ class TestOrder(TestCase):
         order = Order.objects.place_order_for_user(user=user,type='Sell',amount=150.00)
         order.execute_order()
 
+        #test case: get past orders with 'Pending' status
+        list_of_orders = Order.objects.get_past_orders_for_user(user=user, status='Pending', timeframe='WEEK')
+        self.assertFalse(list_of_orders)
+
+        #
         list_of_orders = Order.objects.get_past_orders_for_user(user=user, status='Success', timeframe='WEEK')
         self.assertEqual(len(list_of_orders),4)
         list_of_orders = Order.objects.get_past_orders_for_user(user=user, status='Fail', timeframe='WEEK')
@@ -140,6 +185,19 @@ class TestOrder(TestCase):
         list_of_orders = Order.objects.get_past_orders_for_user(user=user, status='Fail', timeframe='WEEK')
         self.assertFalse(list_of_orders)
 
+
+    def test_change_order_status(self):
+
+        #test case: place order and try to change status to the previous status
+        user = User.objects.create_user(username="foo")
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=10.00)
+        self.assertFalse(order.change_order_status('Pending'))
+
+        #test case: try to change status to one that is different from the previous status
+        self.assertTrue(order.change_order_status('Success'))
+
+        # test case: try to change status to something other than 'Pending','Success','Fail'
+        self.assertFalse(order.change_order_status('Abc'))
 
 
 

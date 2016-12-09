@@ -5,7 +5,7 @@ from django.shortcuts import render
 from trade.forms import TradeForm, OrderHistoryForm
 from user_login.forms import LoginForm
 from django.shortcuts import render, redirect
-from get_price import get_current_ETH_price
+from get_price import get_current_ETH_price, URL_ETH_PRICE
 from trade.models import Order, Account
 from .tasks import update_last_login_for_user
 
@@ -24,16 +24,15 @@ def merge_dicts(*dict_args):
 def common_info(user):
     user_num_of_coins = user.account.coin
     user_cash = user.account.cash
-    coin_price = get_current_ETH_price()['price']
+    coin_price = get_current_ETH_price(URL_ETH_PRICE)['price']
 
     return {
         'coin': user_num_of_coins,
         'cash': user_cash,
-        'parent_page': 'trade',
-        'page': type,
+        # 'parent_page': 'trade',
+        # 'page': type,
         'rate': coin_price,
         'rate_str': "{0:.2f}".format(coin_price)}
-
 
 
 def display_order_history(request):
@@ -68,11 +67,6 @@ def display_order_history(request):
 
 
 def display_buy_sell_panel(request, type):
-
-
-
-    from ipdb import set_trace
-    # set_trace()
 
     if not request.user.is_authenticated():
         empty_Form = LoginForm()

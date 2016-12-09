@@ -1,16 +1,11 @@
 from django.contrib.auth.models import User, AnonymousUser
 from django.core.urlresolvers import reverse
 from django.test import TestCase
+from django.test import Client
 from views import login_user
 
 # Create your tests here.
 
-# ./manage.py test
-
-# class MyTest(
-
-# pytest
-from django.test import Client
 
 class TestUser(TestCase):
 
@@ -35,11 +30,9 @@ class TestUser(TestCase):
 class TestLogin(TestCase):
 
     def test_login_view_fails(self):
-
         c = Client()
         response = c.post('/login/', {'email': 'john@adams.com', 'password': 'smith'})
-        # from ipdb import set_trace
-        # print response.content
+
         self.assertTrue("could not authenticate" in response.content)
         self.assertEqual(response.status_code, 401)
 
@@ -57,3 +50,49 @@ class TestLogin(TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response.url, reverse('dashboard'))
 
+    def test_login_view_with_GET(self):
+        c = Client()
+        response = c.get('/login/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_logout(self):
+        c = Client()
+        c.post('/login', {'email': 'a@d.com', 'password': 'ahmet'})
+        response = c.get('/logout/')
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.url, reverse('main_page'))
+
+class TestSignUp(TestCase):
+
+    def test_signup_view_with_GET(self):
+        c = Client()
+        response = c.get('/signup/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_signup_view_fails(self):
+        c = Client()
+
+        #test case: no first_name was provided
+        response = c.post('/signup/',{'last_name': 'keser',
+                                      'password': 'ahmet', 'email': 'john@adams.com'})
+        self.assertEqual(response.status_code, 400)
+
+        #test_case: invalid email
+        response = c.post('/signup/',{'first_name': 'mehmet', 'last_name': 'keser',
+                                      'password': 'ahmet', 'email': 'john.adam.com'})
+        self.assertEqual(response.status_code, 400)
+
+        #test_case: user with the same email address already exists
+        User.objects.create_user(username='john@adams.com', email='john@adams.com', password='smith')
+        response = c.post('/signup/',{'first_name': 'mehmet', 'last_name': 'keser',
+                                      'password': 'ahmet', 'email': 'john@adams.com'})
+        self.assertEqual(response.status_code, 400)
+
+    def test_signup_view_succeeds(self):
+        c = Client()
+
+        response = c.post('/signup/',{'first_name': 'ahmet', 'last_name': 'keser',
+                                      'password': 'ahmet', 'email': 'john@adams.com'})
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.url, reverse('dashboard'))
