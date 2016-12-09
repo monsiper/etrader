@@ -37,7 +37,6 @@ django-crispy-forms==1.6.1
 django-extensions==1.7.4
 docutils==0.12
 dodgy==0.1.9
-dynd===f641248
 ecdsa==0.13
 enum34==1.1.2
 et-xmlfile==1.0.1
