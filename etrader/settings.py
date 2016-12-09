@@ -88,18 +88,29 @@ CORS_ORIGIN_WHITELIST = (
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'etrader',
-        'USER': 'monsiper',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
-        },
-
+if 'TRAVIS' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE':   'django.db.backends.postgresql_psycopg2',
+            'NAME':     'travisdb',
+            'USER':     'postgres',
+            'PASSWORD': '',
+            'HOST':     'localhost',
+            'PORT':     '',
+        }
     }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'etrader',
+            'USER': 'monsiper',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '',
+            },
+
+        }
 
 
 # Password validation

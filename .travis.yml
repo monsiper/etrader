@@ -8,9 +8,9 @@ install:
 services:
   - postgresql
 addons:
-  postgresql: "9.4"
+  postgresql: "9.5"
 before_script:
-  - psql -c 'create database etrader;' -U monsiper
+  - psql -c 'create database travisdb;' -U postgres
 # command to run tests
 script: 
   - ./manage.py test
