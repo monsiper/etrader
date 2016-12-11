@@ -42,7 +42,6 @@ def display_order_history(request):
 
     if request.method == "POST":
         form = OrderHistoryForm(request.POST)
-
         if form.is_valid():
             orders = Order.objects.get_past_orders_for_user(request.user,
                                                         status=form.cleaned_data['status_type'],
@@ -63,7 +62,6 @@ def display_order_history(request):
          'form': form,
          'parent_page': 'trade',
          'page': 'order_history'}))
-
 
 
 def display_buy_sell_panel(request, type):

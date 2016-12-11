@@ -7,6 +7,7 @@ from dateutil.relativedelta import relativedelta
 import pytz,decimal
 from trade.views import merge_dicts, common_info
 from django.test import Client
+from django.core.urlresolvers import reverse
 
 # Create your tests here.
 
@@ -24,6 +25,61 @@ class TestTradeViews(TestCase):
     def test_common_info(self):
         user = User.objects.create_user(username='foo')
         self.assertEqual(len(common_info(user)),4)
+
+    def test_display_order_history(self):
+        c = Client()
+        # test case: anonymous user
+        response = c.get(reverse('display_order_history'))
+        self.assertEqual(response.status_code, 403)
+
+        #test_case: authenticated user with GET
+        User.objects.create_user(username='john@adams.com', email='john@adams.com', password='smith')
+        c.post(reverse('login'), {'email': 'john@adams.com', 'password': 'smith'})
+        response = c.get(reverse('display_order_history'))
+        self.assertEqual(response.status_code, 200)
+
+        # test_case: authenticated user with POST
+        response = c.post(reverse('display_order_history'), {'interval': 'WEEK', 'status_type': 'All'})
+        self.assertEqual(response.status_code, 200)
+
+    def test_display_buy_sell_panel(self):
+        c = Client()
+        # test case: anonymous user
+        response = c.get(reverse('display_buy'))
+        self.assertEqual(response.status_code, 403)
+        response = c.get(reverse('display_sell'))
+        self.assertEqual(response.status_code, 403)
+
+        #test_case: authenticated user with GET
+        User.objects.create_user(username='john@adams.com', email='john@adams.com', password='smith')
+        c.post(reverse('login'), {'email': 'john@adams.com', 'password': 'smith'})
+        response = c.get(reverse('display_buy'))
+        self.assertEqual(response.status_code, 200)
+        response = c.get(reverse('display_sell'))
+        self.assertEqual(response.status_code, 200)
+
+        # test_case: authenticated user with POST
+        response = c.post(reverse('display_buy'),{})
+        self.assertEqual(response.status_code, 200)
+        response = c.post(reverse('display_buy'),{'num_of_coins': 400, 'amount': 200})
+        self.assertEqual(response.status_code, 302)
+        response = c.post(reverse('display_buy'),{'num_of_coins': 800, 'amount': 200})
+        self.assertEqual(response.status_code, 302)
+        response = c.post(reverse('display_sell'),{})
+        self.assertEqual(response.status_code, 200)
+        response = c.post(reverse('display_sell'),{'num_of_coins': 100, 'amount': 200})
+        self.assertEqual(response.status_code, 302)
+        response = c.post(reverse('display_sell'),{'num_of_coins': 500, 'amount': 200})
+        self.assertEqual(response.status_code, 302)
+
+        # response = c.post(reverse('display_sell'),{'num_of_coins': 500})
+        # self.assertEqual(response.status_code, 302)
+        # response = c.post(reverse('display_sell'),{'num_of_coins': 700})
+        # self.assertEqual(response.status_code, 302)
+
+
+
+
 
 
 class TestAccount(TestCase):

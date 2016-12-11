@@ -58,7 +58,7 @@ class TestLogin(TestCase):
     def test_logout(self):
         c = Client()
         c.post('/login', {'email': 'a@d.com', 'password': 'ahmet'})
-        response = c.get('/logout/')
+        response = c.get(reverse('logout'))
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response.url, reverse('main_page'))
 

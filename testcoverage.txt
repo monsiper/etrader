@@ -1,0 +1,40 @@
+Name                                          Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------
+etrader/__init__.py                               3      0      0      0   100%
+etrader/celery.py                                 7      0      0      0   100%
+etrader/settings.py                              26      1      2      1    93%   92, 91->92
+etrader/urls.py                                   5      0      0      0   100%
+main/__init__.py                                  0      0      0      0   100%
+main/admin.py                                     1      0      0      0   100%
+main/apps.py                                      4      0      0      0   100%
+main/migrations/__init__.py                       0      0      0      0   100%
+main/models.py                                    2      0      0      0   100%
+main/tests.py                                    21      0      0      0   100%
+main/urls.py                                      3      0      0      0   100%
+main/views.py                                    18      0      4      0   100%
+manage.py                                         6      0      2      1    88%   5->exit
+trade/__init__.py                                 0      0      0      0   100%
+trade/admin.py                                    1      0      0      0   100%
+trade/apps.py                                     4      0      0      0   100%
+trade/forms.py                                   18      1      4      1    91%   23, 22->23
+trade/get_price.py                               11      0      2      0   100%
+trade/migrations/0001_initial.py                  8      0      0      0   100%
+trade/migrations/0002_auto_20161110_2033.py       7      0      0      0   100%
+trade/migrations/0003_auto_20161207_2120.py       5      0      0      0   100%
+trade/migrations/__init__.py                      0      0      0      0   100%
+trade/models.py                                 126      5     38      1    94%   100-105, 98->100
+trade/tasks.py                                   10      2      0      0    80%   13, 18
+trade/tests.py                                  175      0      0      0   100%
+trade/urls.py                                     3      0      0      0   100%
+trade/views.py                                   58      4     24      4    90%   50, 97, 111-113, 45->50, 81->113, 84->111, 91->97
+user_login/__init__.py                            0      0      0      0   100%
+user_login/admin.py                               1      0      0      0   100%
+user_login/apps.py                                4      0      0      0   100%
+user_login/forms.py                              28      0      8      1    97%   41->exit
+user_login/migrations/__init__.py                 0      0      0      0   100%
+user_login/models.py                              2      0      0      0   100%
+user_login/tests.py                              64      0      0      0   100%
+user_login/urls.py                                3      0      0      0   100%
+user_login/views.py                              35      0      8      0   100%
+-----------------------------------------------------------------------------------------
+TOTAL                                           659     13     92      9    97%
