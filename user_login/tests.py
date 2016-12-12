@@ -96,3 +96,4 @@ class TestSignUp(TestCase):
 
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response.url, reverse('dashboard'))
+

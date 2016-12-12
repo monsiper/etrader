@@ -1,17 +1,16 @@
 from __future__ import unicode_literals
-
-from django.db import models
+from django.db import models, transaction
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils import timezone
 from django.contrib.auth.models import User
 import decimal,logging
-from get_price import get_current_ETH_price, URL_ETH_PRICE
+from ETH_price import get_price_from_web_api
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 # Create your models here.
 
-
+URL_ETH_PRICE = 'https://www.cryptocompare.com/api/data/price?fsym=ETH&tsyms=USD'
 logger = logging.getLogger(__name__)
 
 class AccountManager(models.Manager):
@@ -43,7 +42,6 @@ class Account(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     timestamp_latest_activity = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
-    processing_lock = models.BooleanField(default=False)
 
     def is_daily_limit_exceeded(self, order):
 
@@ -70,9 +68,9 @@ class Account(models.Model):
     def has_enough_cash_or_coin_for_order(self, order):
 
         if order.type == 'Buy':
-            coin_price = get_current_ETH_price(URL_ETH_PRICE)
+            coin_price = get_price_from_web_api(URL_ETH_PRICE)
 
-            if order.amount*coin_price['price'] > self.cash:
+            if order.amount*coin_price[1] > self.cash:
                 return False
             else:
                 return True
@@ -171,38 +169,27 @@ class Order(models.Model):
 
     def execute_order(self):
 
-        account = self.user.account
-        account.processing_lock = True
-        account.save(update_fields=['processing_lock'])
-
         if self.is_valid():
-            coin_price = get_current_ETH_price(URL_ETH_PRICE)
 
-            if self.type=='Buy':
-                account.cash -= self.amount*coin_price['price']
-                account.coin += self.amount
-                account.timestamp_latest_activity = timezone.now()
-            else:
-                account.coin -= self.amount
-                account.cash += self.amount*coin_price['price']
-                account.timestamp_latest_activity = timezone.now()
-
+            coin_price = get_price_from_web_api(URL_ETH_PRICE)
+            with transaction.atomic():
+                account = Account.objects.select_for_update().get(user=self.user)
+                if self.type=='Buy':
+                    account.cash -= self.amount*coin_price[1]
+                    account.coin += self.amount
+                    account.timestamp_latest_activity = timezone.now()
+                else:
+                    account.coin -= self.amount
+                    account.cash += self.amount*coin_price[1]
+                    account.timestamp_latest_activity = timezone.now()
+                account.save()
             self.change_order_status('Success')
-            account.processing_lock = False
-            account.save()
             return True
-
         else:
             self.cancel_order()
-            account.processing_lock = False
-            account.save(update_fields=['processing_lock'])
             return False
 
 
-#Order cannot be executed, make sure order amount does not ' \
-#                      'exceed account balance or daily limit'
-
-
-class EthereumPrice(models.Model):
-    price = models.DecimalField(max_digits=40, decimal_places=30)
-    date_created = models.DateTimeField(auto_now_add=True)
+# class EthereumPrice(models.Model):
+#     price = models.DecimalField(max_digits=40, decimal_places=30)
+#     date_created = models.DateTimeField(auto_now_add=True)

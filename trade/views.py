@@ -1,12 +1,11 @@
 from django.contrib import messages
 from django.core.urlresolvers import reverse
-from django.http import Http404, HttpResponse
-from django.shortcuts import render
+from django.http import Http404
 from trade.forms import TradeForm, OrderHistoryForm
 from user_login.forms import LoginForm
 from django.shortcuts import render, redirect
-from get_price import get_current_ETH_price, URL_ETH_PRICE
-from trade.models import Order, Account
+from ETH_price import get_price_from_web_api
+from trade.models import Order, URL_ETH_PRICE
 from .tasks import update_last_login_for_user
 
 
@@ -24,7 +23,7 @@ def merge_dicts(*dict_args):
 def common_info(user):
     user_num_of_coins = user.account.coin
     user_cash = user.account.cash
-    coin_price = get_current_ETH_price(URL_ETH_PRICE)['price']
+    coin_price = get_price_from_web_api(URL_ETH_PRICE)[1]
 
     return {
         'coin': user_num_of_coins,

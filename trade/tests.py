@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
-from trade.models import Order, Account
+from trade.models import Order, Account, URL_ETH_PRICE
 from django.test import TestCase
-from get_price import get_current_ETH_price, URL_ETH_PRICE
+from ETH_price import get_price_from_web_api
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import pytz,decimal
@@ -10,7 +10,6 @@ from django.test import Client
 from django.core.urlresolvers import reverse
 
 # Create your tests here.
-
 
 # a user must have one and only one account
 class TestTradeViews(TestCase):
@@ -77,11 +76,6 @@ class TestTradeViews(TestCase):
         # response = c.post(reverse('display_sell'),{'num_of_coins': 700})
         # self.assertEqual(response.status_code, 302)
 
-
-
-
-
-
 class TestAccount(TestCase):
 
     def test_create_account_for_user(self):
@@ -117,11 +111,12 @@ class TestOrder(TestCase):
 
 
     def test_execute_order(self):
-
         user = User.objects.create_user(username='foo')
-        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=10.00)
+        order = Order.objects.place_order_for_user(user=user,type='Buy',amount=100.00)
         self.assertEqual(order.execute_order(), True)
         self.assertEqual(Order.objects.filter(user=user).first().order_status, 'Success')
+        #
+        user = User.objects.get(username='foo')
         self.assertLess(user.account.cash, 10000.00)
 
 
@@ -192,15 +187,17 @@ class TestOrder(TestCase):
 
     def test_get_current_ETH_price(self):
 
-        #test case: pulling price from the valid site
-        response = get_current_ETH_price(URL_ETH_PRICE)
-        self.assertEqual(response['status'], 'Success')
-        self.assertGreater(response['price'], 0)
-
         #test case: pulling price from an invalid site
-        response = get_current_ETH_price('http://www.cnn.com/mehmetonsiper')
-        self.assertEqual(response['status'], 'Error')
-        self.assertEqual(response['price'], None)
+        response = get_price_from_web_api('http://www.cnn.com/mehmetonsiper')
+        self.assertEqual(response[0], 'Error')
+        self.assertEqual(response[1], None)
+
+
+        #test case: pulling price from the valid site
+        response = get_price_from_web_api(URL_ETH_PRICE)
+        self.assertEqual(response[0], 'Success')
+        self.assertGreater(response[1], 0)
+
 
     def test_get_past_orders_for_user(self):
 
