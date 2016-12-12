@@ -183,6 +183,7 @@ class Order(models.Model):
                     account.cash += self.amount*coin_price[1]
                     account.timestamp_latest_activity = timezone.now()
                 account.save()
+            self.user.account = account
             self.change_order_status('Success')
             return True
         else:

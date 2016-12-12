@@ -116,7 +116,7 @@ class TestOrder(TestCase):
         self.assertEqual(order.execute_order(), True)
         self.assertEqual(Order.objects.filter(user=user).first().order_status, 'Success')
         #
-        user = User.objects.get(username='foo')
+        #user = User.objects.get(username='foo')
         self.assertLess(user.account.cash, 10000.00)
 
 
