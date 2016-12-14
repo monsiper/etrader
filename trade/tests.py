@@ -185,7 +185,7 @@ class TestOrder(TestCase):
         self.assertFalse(order.is_valid())
 
 
-    def test_get_current_ETH_price(self):
+    def test_get_price_from_web_api(self):
 
         #test case: pulling price from an invalid site
         response = get_price_from_web_api('http://www.cnn.com/mehmetonsiper')
